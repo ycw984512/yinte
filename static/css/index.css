@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+#app {
+  transition: 1s;
+}
+
+/* header */
+#navbar {
+
+  /* margin-top: 12px; */
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.wrap {
+  padding: 0 52px 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 79px;
+  border-bottom: 1px solid #ccc
+}
+
+.wtBg {
+  background-color: #fff !important;
+}
+
+.wtlogo {
+  background: url(../images/index/logo_wh.png) no-repeat left !important;
+}
+
+.changeBg {
+  background-position: 15px -32px !important;
+}
+
+.wtColor {
+  color: #333 !important;
+}
+
+#nav-box {
+
+
+  margin-left: 100px;
+  width: 49%;
+  height: 100%;
+  z-index: 999;
+}
+
+.logo {
+  display: block;
+  width: 242px;
+  height: 100%;
+  background: url(../images/index/logo.png) no-repeat left;
+}
+
+.nav-list {
+  flex: 1;
+  text-align: center;
+  float: left;
+  width: 130px;
+}
+
+.nav-title {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 79px;
+  color: #333;
+  transition: all 0.3s ease-out 0s;
+
+}
+
+.nav-title .line {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -1px;
+  left: 74px;
+  /*从中间向两边伸长的关键*/
+  background: #1b82d1;
+  transition: all 0.3s ease-out 0s;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  z-index: 999;
+  /* background: url(../images/index/nav_bg.png) #fff no-repeat left 34px; */
+  margin-top: 10px;
+  transform: translateY(1px);
+
+  transition: all 1s ease-out 0s;
+
+}
+
+.showList {
+  padding: 10px 0;
+  width: 100%;
+  transform: translateY(1px);
+  display: block;
+
+}
+
+.menu-list {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+
+}
+
+.menu-list a {
+  font-size: 14px;
+  color: #666;
+
+}
+
+.search-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#nav-box li:nth-child(2) div {
+  width: 500px;
+  position: relative;
+  right: 181px;
+
+}
+
+.search-con {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: #fff;
+  visibility: hidden;
+}
+
+.search-text {
+  padding: 0 10px;
+  width: 208px;
+  height: 34px;
+  border: none;
+  border-right: 1px solid #ededed;
+  font-size: 13px;
+  color: #a8a8a8;
+}
+
+.search-submit {
+  margin: 3px 0;
+  width: 46px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #a8a8a8;
+  text-align: center;
+}
+
+.search-logo {
+  display: inline-block;
+  width: 44px;
+  height: 42px;
+  background: url(../images/index/search_icon.png) no-repeat 15px 14px;
+}
+
+.nav-bg {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 80px;
+
+  background-color: #fff;
+  transition: all 0.3s ease-out 0s;
+}
+
+.noBg {
+  background: none;
+}
+
+
+
+.open {
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  height: 228px;
+  z-index: 9;
+}
+
+/*hover的操作对象为自身或者子孙节点*/
+.wrap:hover {
+  background-color: #fff;
+}
+
+.wrap:hover .logo {
+  background: url(../images/index/logo_wh.png) no-repeat left;
+}
+
+/* .wrap:hover .nav-list a {
+  color: #333;
+} */
+
+
+.nav-list:hover .line {
+  width: 100%;
+  left: 0;
+}
+
+.wrap:hover .search-logo {
+  background-position: 15px -32px;
+}
+
+.search-box:hover .search-con {
+  visibility: visible;
+}
+
+/* end header */
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 248px;
+  background-color: hsla(214, 97%, 58%, 1);
+}
+
+.foot_wrap {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0 40px;
+  border-bottom: 1px solid #fff;
+}
+
+.foot1,
+.foot2,
+.foot3,
+.foot4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.foot1 .title,
+.foot2 .title,
+.foot3 .title,
+.foot4 .title {
+  font-size: 20px;
+  color: hsla(215, 100%, 87%, 1);
+}
+
+.foot1 ul,
+.foot2 ul,
+.foot3 ul,
+.foot4 ul {
+  margin-top: 10px;
+}
+
+.foot1 li,
+.foot2 li,
+.foot3 li,
+.foot4 li {
+  font-size: 15px;
+  color: hsla(215, 100%, 78%, 1);
+  text-align: center;
+  margin-top: 5px;
+}
+
+.foot1 li:hover,
+.foot2 li:hover,
+.foot3 li:hover,
+.foot4 li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.foot_bot {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  padding: 30px 0px 50px;
+  background-color: hsla(214, 97%, 58%, 1);
+}
+
+/* end header */
